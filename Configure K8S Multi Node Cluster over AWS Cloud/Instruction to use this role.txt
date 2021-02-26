@@ -1,0 +1,9 @@
+step1 --> put you key in AWSKEY file
+-----------------------------------------------------------
+step2 --> go to ec2_instane role and than go to vars file there five aws_acess_key and aws_secret_key
+-----------------------------------------------------------
+step3 --> ansible-playbook ec2.yml --> this will lauch nodes on AWS cloud
+-----------------------------------------------------------
+step4 --> ansible-playbook master.yml --> this will set up master and create a join command for nodes and copy that in worker_node role var file
+-----------------------------------------------------------
+step5 --> ansible-playbook worker.yml --> this will setup and join all worker node to master
